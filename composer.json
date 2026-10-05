@@ -1,0 +1,45 @@
+{
+    "name": "tyhpdef/spatie-laravel-permission-impl",
+    "description": "Implementation package for tyhpdef/spatie-laravel-permission. Require tyhpdef/spatie-laravel-permission, not this package.",
+    "keywords": [
+        "dev",
+        "static analysis",
+        "internal"
+    ],
+    "type": "library",
+    "license": "Apache-2.0",
+    "version": "8.3.0.0",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "tyhp": {
+            "interopContractVersion": 1,
+            "php-version": "8.2",
+            "require": {
+                "tyhpdef/php": "@dev",
+                "tyhpdef/laravel-framework": "@dev",
+                "tyhpdef/spatie-laravel-package-tools": "@dev"
+            },
+            "package": {
+                "include": [
+                    "./_tyhpdef/*.tyhpdef",
+                    "./_tyhpdef/extensions/*.tyhpdef"
+                ],
+                "overlay": [
+                    "./_tyhpdef/overlays/stubs/*.tyhpdef",
+                    "./_tyhpdef/overlays/*.tyhpdef"
+                ]
+            },
+            "public": "tyhpdef/spatie-laravel-permission"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "spatie/laravel-permission": "8.3.0"
+    },
+    "require-dev": {
+        "tyhpdef/php": "@dev",
+        "tyhpdef/laravel-framework": "@dev",
+        "tyhpdef/spatie-laravel-package-tools": "@dev"
+    }
+}
